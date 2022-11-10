@@ -1,0 +1,40 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+html {
+    height: 100%;
+}
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#5d87ba, #7aabcf);
+  }
+
+
+.container{
+    font-family:'nanumsquare';
+    margin: auto;
+    padding: auto;
+    width: 500px;
+}
+
+.home_return{
+    text-align: center;
+    color: black;
+}
+
+.login_box{
+    width: 500px;
+    height: 400px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+.panel_item{
+    
+
+}
+.find_box{
+    padding: auto;
+}
