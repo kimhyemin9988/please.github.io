@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int N;
+    scanf("%d", &N);
+
+    while(N>1)
+    {
+        
+        for (int i=2; i<=N ; i++) // 2부터 순서대로 N을 나눈다 
+        {   
+            if(N%i == 0)// 나머지가 0이라면
+            {
+                printf("%d\n", i); 
+                N=N/i;
+                break;
+            }
+
+        }
+
+    }
+
+    return 0;
+}
