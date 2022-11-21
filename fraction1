@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+    int countF = 1;
+    int k=1;
+    int n=1;
+    int counts = 0;
+
+    scanf("%d", &counts); // 1
+    
+    // counts랑 count가 같아지게 되면 출력 // 
+
+while(counts != countF)  // 1/2
+{    
+
+    if(k<n) 
+    {
+        while(n != 1) // k가 1이 되지 않을 동안 // 1이되면 break; //  1/2
+        {
+            k++; 
+            n--;
+            countF++;
+            if(counts == countF)
+            break;
+        }
+        if(counts == countF)
+        break;
+        k++;
+        countF++;
+    }
+
+    else if (k>n) 
+    // 지우기 n==1이면 
+    {
+        while(k != 1) // n가 1이 되지 않을 동안
+        {
+            n++;
+            k--;
+            countF++;
+            if(counts == countF)
+            break;
+        }
+        if(counts == countF)
+        break;
+        n++;
+        countF++;
+    }
+    
+    else
+    {
+        n++;
+        countF++;
+    }
+
+}
+
+printf("%d/%d", k, n);
+    return 0;
+}
