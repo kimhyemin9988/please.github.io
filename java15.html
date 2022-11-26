@@ -1,0 +1,45 @@
+<!-- 숫자를 입력받은 후 1부터 그 숫자까지 3의 배수를 모두 화면에 출력한다.
+ 그리고 출력된 3의 배수가 총 몇개인지 알려주는 프로그램을 작성.
+
+for()
+n%3 === 0 =>3의 배수
+3의 배수를 출력
+n입력숫자
+k개수
+n+"까지 3의 배수의 개수:"+k
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<h2>3의 배수 찾기</h2>
+	<script>
+	var number = prompt("몇 까지 3의 배수를 찾을까요?");
+	var count = 0;
+			if(number !== null)
+			{
+				for(let i=1; i<=number; i++)
+				{
+					if(i%3 == 0)
+					{
+						document.write(i);
+						count++;
+						document.write(", ");
+					}
+				}
+				document.write("<br>");
+				document.write(number+"까지의 3의 배수의 개수:"+count);
+			}
+	</script>
+</body>
+</html>
